@@ -1,21 +1,16 @@
 plugins {
-    kotlin("jvm") version "2.0.21"
+  kotlin("jvm") version "2.0.21"
+  id("com.gradleup.shadow") version ("9.0.0-beta7")
 }
 
 group = "dev.ajkn"
+
 version = "1.0-SNAPSHOT"
 
-repositories {
-    mavenCentral()
-}
+repositories { mavenCentral() }
 
-dependencies {
-    testImplementation(kotlin("test"))
-}
+dependencies { testImplementation(kotlin("test")) }
 
-tasks.test {
-    useJUnitPlatform()
-}
-kotlin {
-    jvmToolchain(17)
-}
+tasks.test { useJUnitPlatform() }
+
+kotlin { jvmToolchain(17) }

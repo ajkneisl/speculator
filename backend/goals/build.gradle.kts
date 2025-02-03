@@ -1,5 +1,6 @@
 plugins {
     kotlin("jvm") version "2.0.21"
+    id("com.gradleup.shadow") version ("9.0.0-beta7")
 }
 
 group = "dev.ajkn"
